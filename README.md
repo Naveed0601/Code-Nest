@@ -1,7 +1,7 @@
 # Code-Nest
 
 **Frontend:**  
-- Implement draggable and movable divs.  
+✔️ Implement draggable and movable divs.  
 - Each div should contain a text box.  
 - Establish connections between divs using lines.  
 - Support different line shapes.  
