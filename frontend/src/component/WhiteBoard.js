@@ -1,21 +1,39 @@
-import React from 'react';
-import { useState, useCallback } from 'react';
-import { ReactFlow, Controls, Background, applyNodeChanges} from "@xyflow/react";
-import { CodeBlocks } from './CodeBlocks';
-import '@xyflow/react/dist/style.css';
+import React, { useState, useCallback } from "react";
+import {
+  ReactFlow,
+  Controls,
+  Background,
+  applyNodeChanges,
+  useEdgesState,
+} from "@xyflow/react";
+import "@xyflow/react/dist/style.css";
+import TestBlock from "../Data/TestCodeBlock.json";
+import InitialEdges from "../Data/Edges.json";
+import { AnimatedSVGEdge } from "../animationMotion/CircleAnimation";
 
 export const WhiteBoard = () => {
-
-  const [nodes, setNodes] = useState(CodeBlocks);
- 
+  const [nodes, setNodes] = useState(TestBlock);
   const onNodesChange = useCallback(
     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-    [],
+    []
   );
 
+  const [edges, setEdges, onEdgesChange] = useEdgesState(InitialEdges);
+
+  const edgeTypes = {
+    animatedSvg: AnimatedSVGEdge,
+  };
+
   return (
-    <div style={{ width: '100vw', height: '100vh' }}> 
-      <ReactFlow nodes={nodes} onNodesChange={onNodesChange} style={{ width: '100%', height: '100%' }}>
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        edgeTypes={edgeTypes}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        style={{ width: "100%", height: "100%" }}
+      >
         <Background />
         <Controls />
       </ReactFlow>
