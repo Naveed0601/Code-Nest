@@ -1,7 +1,8 @@
 [
     {
       "id": "1",
-      "data": { "label": "Code" },
+      "type": "CodeNode",
+      "data": { "id": "1" },
       "position": { "x": 100, "y": 100 }
     },
     {

@@ -10,6 +10,7 @@ import "@xyflow/react/dist/style.css";
 import TestBlock from "../Data/TestCodeBlock.json";
 import InitialEdges from "../Data/Edges.json";
 import { AnimatedSVGEdge } from "../animationMotion/CircleAnimation";
+import { CodeNode } from "../nodes/CodeNode";
 
 export const WhiteBoard = () => {
   const [nodes, setNodes] = useState(TestBlock);
@@ -24,10 +25,15 @@ export const WhiteBoard = () => {
     animatedSvg: AnimatedSVGEdge,
   };
 
+  const nodeTypes  = {
+    CodeNode : CodeNode,
+  };
+
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <ReactFlow
         nodes={nodes}
+        nodeTypes={nodeTypes}
         edges={edges}
         edgeTypes={edgeTypes}
         onNodesChange={onNodesChange}

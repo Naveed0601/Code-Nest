@@ -1,10 +1,9 @@
 [
     {
       "id": "1-2",
-      "source": "1",
+      "source": "s1",
       "target": "2",
-      "label": "Parent Code",
-      "type": "animatedSvg"
+      "label": "Parent Code"
     },
     {
       "id": "2-3",

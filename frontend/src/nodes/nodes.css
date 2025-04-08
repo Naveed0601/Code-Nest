@@ -1,0 +1,19 @@
+.codeSpace {
+    width: 128.4px;
+    height: 40px;
+    padding: 10px;
+    border: 0.8px solid rgb(26, 25, 43);
+    border-radius: 3px;
+    position: absolute;
+    align-items: center;
+    visibility: visible; /* temporary fix, its being set to hidden by default, need to fix */
+}
+
+.codeSpace > input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+}
