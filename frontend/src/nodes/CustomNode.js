@@ -1,7 +1,7 @@
 import { Handle, Position } from "@xyflow/react"
 import "./nodes.css"
 
-export const CodeNode = ({ id }) => {
+export const CustomNode = ({ id }) => {
     return (
         <div className="codeSpace">
             <Handle 
@@ -10,7 +10,6 @@ export const CodeNode = ({ id }) => {
                 id={`t${id}`}
                 isConnectable={true}
             />
-            <input type="text" id="code" placeholder="Code Block 1"/>
             <Handle 
                 type="source"
                 position={Position.Bottom}

@@ -10,7 +10,7 @@ import "@xyflow/react/dist/style.css";
 import TestBlock from "../Data/TestCodeBlock.json";
 import InitialEdges from "../Data/Edges.json";
 import { AnimatedSVGEdge } from "../animationMotion/CircleAnimation";
-import { CodeNode } from "../nodes/CodeNode";
+import { CustomNode } from "../nodes/CustomNode";
 
 export const WhiteBoard = () => {
   const [nodes, setNodes] = useState(TestBlock);
@@ -26,7 +26,7 @@ export const WhiteBoard = () => {
   };
 
   const nodeTypes  = {
-    CodeNode : CodeNode,
+    CustomNode : CustomNode,
   };
 
   return (
