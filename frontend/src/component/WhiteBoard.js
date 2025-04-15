@@ -25,7 +25,7 @@ export const WhiteBoard = () => {
     animatedSvg: AnimatedSVGEdge,
   };
 
-  const nodeTypes  = {
+  const nodeTypes = {
     CustomNode : CustomNode,
   };
 

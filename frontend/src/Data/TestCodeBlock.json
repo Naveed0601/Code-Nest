@@ -10,5 +10,11 @@
     "type" : "b",
     "data" : {"label" : "Output A"},
     "position" : {"x" : 100 , "y" : 300}
+  },
+  {
+    "id" : "3",
+    "type" : "c",
+    "data" : {"label" : "Output A"},
+    "position" : {"x" : 100 , "y" : 300}
   }
 ]
