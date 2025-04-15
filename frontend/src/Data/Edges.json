@@ -2,6 +2,7 @@
   {
     "id" : "n1",
     "source" : "1",
+    "sourceHandle" : "1",
     "target" : "2",
     "animated" : true
   },

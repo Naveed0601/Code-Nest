@@ -14,7 +14,7 @@
   {
     "id": "3",
     "type": "CustomNode",
-    "data": { "label": "Output A" },
-    "position": { "x": 100, "y": 300 }
+    "data": { "label": "Output B" },
+    "position": { "x": 300, "y": 300 }
   }
 ]
