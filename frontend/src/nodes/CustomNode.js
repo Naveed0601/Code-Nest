@@ -1,19 +1,21 @@
 import { Handle, Position } from "@xyflow/react"
 import "./nodes.css"
 
-export const CustomNode = ({ id }) => {
+export const CustomNode = ({ id, data }) => {
+    console.log("id:", id)
     return (
         <div className="codeSpace">
+            <div>{data.label}</div>
             <Handle 
                 type="target"
                 position={Position.Top}
-                id={`t${id}`}
+                id={{id}}
                 isConnectable={true}
             />
             <Handle 
                 type="source"
                 position={Position.Bottom}
-                id={`s${id}`}
+                id={{id}}
                 isConnectable={true}
             />
         </div>
