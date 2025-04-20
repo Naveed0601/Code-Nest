@@ -1,21 +1,22 @@
-import { Handle, Position } from "@xyflow/react"
-import "./nodes.css"
+import { Handle, Position } from "@xyflow/react";
+import "./nodes.css";
 
-export const CustomNode = ({ id }) => {
-    return (
-        <div className="codeSpace">
-            <Handle 
-                type="target"
-                position={Position.Top}
-                id={`t${id}`}
-                isConnectable={true}
-            />
-            <Handle 
-                type="source"
-                position={Position.Bottom}
-                id={`s${id}`}
-                isConnectable={true}
-            />
-        </div>
-    )
-}
+export const CustomNode = ({ data }) => {
+  return (
+    <div className="codeSpace">
+      <div>{data.label}</div>
+      <Handle
+        id={data.targetHandleId}
+        type="target"
+        position={Position.Top}
+        isConnectable={true}
+      />
+      <Handle
+        id={data.sourceHandleId}
+        type="source"
+        position={Position.Bottom}
+        isConnectable={true}
+      />
+    </div>
+  );
+};

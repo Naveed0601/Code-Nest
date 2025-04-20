@@ -26,7 +26,7 @@ export const WhiteBoard = () => {
   };
 
   const nodeTypes = {
-    CustomNode : CustomNode,
+    CustomNode: CustomNode,
   };
 
   return (

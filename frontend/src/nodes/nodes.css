@@ -4,10 +4,12 @@
     padding: 10px;
     border: 0.8px solid rgb(26, 25, 43);
     border-radius: 3px;
-    position: absolute;
+    position: relative; /* <--- FIXED */
+    display: flex;
     align-items: center;
-    visibility: visible; /* temporary fix, its being set to hidden by default, need to fix */
-}
+    justify-content: center;
+  }
+  
 
 .codeSpace > input {
     display: block;
