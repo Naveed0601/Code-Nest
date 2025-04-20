@@ -1,12 +1,9 @@
 [
   {
-    "id": "n1",
-    "source": "1",
-    "target": "2",
-    "sourceHandle": "s1",
-    "targetHandle": "t2",
-    "animated": true,
-    "type": "animatedSvg"
+    "id" : "n1",
+    "source" : "1",
+    "target" : "2",
+    "animated" : true
   },
   {
     "id": "n2",
