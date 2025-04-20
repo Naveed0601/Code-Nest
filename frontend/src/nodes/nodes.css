@@ -1,14 +1,16 @@
 .codeSpace {
-    width: 128.4px;
-    height: 40px;
-    padding: 10px;
-    border: 0.8px solid rgb(26, 25, 43);
-    border-radius: 3px;
-    position: relative; /* <--- FIXED */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 128.4px;
+  height: 40px;
+  padding: 10px;
+  border: 0.8px solid rgb(26, 25, 43);
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
   
 
 .codeSpace > input {
